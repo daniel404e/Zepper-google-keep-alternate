@@ -1,5 +1,5 @@
 import React from "react";
-
+import BeenhereIcon from '@mui/icons-material/Beenhere';
 
 function  header ()
 {
@@ -8,7 +8,7 @@ function  header ()
 
         <header>
          
-            <h1>Zeeper</h1>
+            <h1>Zeeper <BeenhereIcon/></h1>
               <h4 style={{color:"white"}}>Google keep but better</h4>
             </header>
     )

@@ -4,6 +4,8 @@ import Footer from './footer';
 import Note from './note';
 import notescont from "../notes.js";
 import CreateArea from "./createarea";
+
+
 function  App ()
 {
 
@@ -21,8 +23,8 @@ function  App ()
     function ondeletego(e)
     {
               
-        console.log(e.target.id);
-        var todeleteindex = e.target.id ;
+        console.log(e);
+        var todeleteindex = e  ;
 
       setnotesc(  notesc.filter(function (elem,index) { 
                
@@ -48,6 +50,7 @@ function  App ()
         
         
        }
+       
 
     return(
 

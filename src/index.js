@@ -12,15 +12,20 @@
 //HINT: You will need to study the classes in teh styles.css file to appy styling.
 
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
  
  import App from './components/App';
 
- 
-  ReactDOM.render(
-  
-    <App/>
-   
-,document.getElementById("root"));
 
- 
+ const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+
+root.render(
+   
+  <StrictMode>
+  <App />
+</StrictMode>
+   
+);
